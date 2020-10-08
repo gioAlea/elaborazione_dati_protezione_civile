@@ -1,4 +1,4 @@
-# elaborazione_dati_protezione_civile
+# elaborazione dati forniti dalla protezione civile relativi all'emergenza epidemiologica 2020
 elaborazione dati forniti dalla protezione civile in merito alla pandemia
 
 I dati sono riportati nello stesso formato con cui vengono forniti dalla protezione civile con l'aggiunta di tre colonne:
