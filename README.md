@@ -2,9 +2,9 @@
 
 I dati sono riportati nello stesso formato con cui vengono forniti dalla protezione civile con l'aggiunta di tre colonne:
 
-* 1) Colonna denominata "calcolo_nuovi_positivi": i valori sono calcolati con la seguente formula
+1) Colonna denominata "calcolo_nuovi_positivi": i valori sono calcolati con la seguente formula
 
-calcolo_nuovi_positivi(i) = dimessi_guariti(i)-dimessi_guariti(i-1)+decessi(i)-decessi(i-1)+nuovi_positivi(i)
+* calcolo_nuovi_positivi(i) = dimessi_guariti(i)-dimessi_guariti(i-1)+decessi(i)-decessi(i-1)+nuovi_positivi(i)
 
 dove per i si intente la i-esima riga della tabella.
 
