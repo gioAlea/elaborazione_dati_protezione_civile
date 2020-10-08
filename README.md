@@ -17,3 +17,5 @@ facendo le stesse ipotesi di condizioni iniziali, si osserva che calcolo_variazi
 err(i) = calcolo_variazione_totale_positivi(i) - variazione_totale_positivi(i)
 
 gli errori sembrano distribuiti in maniera piuttosto casuale, colpisce comunque quello più evidente al primo giorno, ossia nell'impostare le condizioni iniziali
+
+mi è stato fatto notare, giustamente, che l'errore err(i) iniziale potrebbe essere relativo sia alla variabile variazione_positivi(i) che alla variabile totale_positivi(i). Nel secondo caso l'errore sarebbe un errore sistematico.
