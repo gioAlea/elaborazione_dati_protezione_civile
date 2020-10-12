@@ -1,6 +1,6 @@
 # elaborazione dati forniti dalla protezione civile relativi all'emergenza epidemiologica 2020
 
-I dati sono riportati nello stesso formato con cui vengono forniti dalla protezione civile con l'aggiunta di tre colonne:
+I dati sono riportati nello stesso formato con cui vengono forniti dalla protezione civile con l'aggiunta di alcune colonne:
 
 1) Colonna denominata "calcolo_nuovi_positivi": i valori sono calcolati con la seguente formula
 
@@ -30,3 +30,21 @@ facendo le stesse ipotesi di condizioni iniziali, si osserva che calcolo_variazi
 gli errori sembrano distribuiti in maniera piuttosto casuale, colpisce comunque quello più evidente al primo giorno, ossia nell'impostare le condizioni iniziali
 
 nota: L'errore err(i) iniziale potrebbe  essere relativo sia alla variabile variazione_positivi(i) che alla variabile totale_positivi(i). questa ipotesi mi sembra che però sia smentita dal fatto che erro_calcolo_variazione_totale_positivi(i) sia sempre nullo.
+
+4) vi è poi una colonna variazione_totale_tamponi calcolata come variazione rispetto al giorno prima del numero di tamponi
+
+variazione_totale_tamponi(i)=tamponi(i)-tamponi(i-1)
+
+il valore di tamponi(0) è ipotizzato essere pari a zero, ipotesi che non appare però compatibile con la presenza di 8 persone positive. errore sistematico ritenuto tollerabile
+
+5) calcolo_variazione_totale_positivi_su_variazione_totale_tamponi
+
+valore in percentuale del rapporto calcolato come segue
+
+calcolo_variazione_totale_positivi_su_variazione_totale_tamponi(i)=calcolo_variazione_totale_positivi(i)/variazione_totale_tamponi(i) * 100
+
+6) calcolo nuovi_positivi_su_variazione_tamponi
+
+valore in percentuale calcolato come segue:
+
+calcolo nuovi_positivi_su_variazione_tamponi= nuovi_positivi(i)/variazione_totale_tamponi(i) * 100
